@@ -1,3 +1,4 @@
+/* Styles généraux */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -6,21 +7,23 @@ body {
 }
 
 .container {
-    width: 300px;
+    width: 400px;
     margin: 50px auto;
     padding: 20px;
     background: white;
-    border-radius: 5px;
+    border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     text-align: center;
+    color: #333;
 }
 
 label {
     display: block;
     margin: 10px 0 5px;
+    color: #555;
 }
 
 input[type="text"],
@@ -28,9 +31,10 @@ input[type="email"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    box-sizing: border-box; /* Pour inclure le padding dans la largeur totale */
 }
 
 input[type="submit"] {
@@ -41,8 +45,38 @@ input[type="submit"] {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 input[type="submit"]:hover {
     background-color: #4cae4c;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Styles pour la page de bienvenue */
+.welcome-container {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.welcome-container h2 {
+    color: #333;
+}
+
+.welcome-container p {
+    margin-top: 20px;
+}
+
+.welcome-container a {
+    color: #5cb85c;
+    text-decoration: none;
+}
+
+.welcome-container a:hover {
+    text-decoration: underline;
 }
