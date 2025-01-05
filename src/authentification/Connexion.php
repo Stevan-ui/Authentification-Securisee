@@ -1,8 +1,8 @@
 <?php
 $host = 'localhost';
-$db = 'authentification'; // Nom de votre base de données
-$user = 'root'; // Remplacez par votre utilisateur de base de données
-$pass = ''; // Remplacez par votre mot de passe de base de données
+$db = 'authentification';
+$user = 'root'; 
+$pass = ''; 
 
 try {
     $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $pass);

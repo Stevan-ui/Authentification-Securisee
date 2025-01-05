@@ -1,15 +1,14 @@
 <?php
 session_start();
-require 'connexion.php'; // Inclure le fichier de connexion à la base de données
+require 'connexion.php'; 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $username = htmlspecialchars($_POST['username']);
     $email = htmlspecialchars($_POST['email']);
     $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
 
-    // Validation des champs
     if (!empty($username) && !empty($email) && !empty($password)) {
-        // Insertion dans la base de données
+        
         $stmt = $pdo->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
         if ($stmt->execute([$username, $email, $password])) {
             $_SESSION['user_email'] = $email;
@@ -30,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inscription</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Intégration du CSS -->
+    <link rel="stylesheet" href="styles.css"> 
 </head>
 <body>
     <div class="container">

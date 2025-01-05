@@ -1,4 +1,3 @@
-/* Styles généraux */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -34,7 +33,7 @@ input[type="password"] {
     margin-bottom: 15px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-sizing: border-box; /* Pour inclure le padding dans la largeur totale */
+    box-sizing: border-box; 
 }
 
 input[type="submit"] {
@@ -58,7 +57,7 @@ input[type="submit"]:hover {
     margin-top: 10px;
 }
 
-/* Styles pour la page de bienvenue */
+
 .welcome-container {
     text-align: center;
     margin: 50px auto;
